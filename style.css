@@ -1073,13 +1073,18 @@ footer a i{
 }
 
 @media(max-width:420px){
+    .change-text h3,
     .change-text h3 .word{
-        font-size: medium;
+        font-size: 2rem;
     }
     .img-box {
+        margin-bottom: 2rem;
         width: 300px;
     }
-    
+    .home-content p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
     html{
         font-size: 80%;
 
