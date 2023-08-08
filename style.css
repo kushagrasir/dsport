@@ -1074,11 +1074,11 @@ footer a i{
 
 @media(max-width:420px){
     html{
-        font-size: 60%;
+        font-size: 80%;
 
     }
     footer p{
-        font-size: .6rem;
+        font-size: .8rem;
     }
     .filter-button .btn{
         font-size: 0.8rem;
