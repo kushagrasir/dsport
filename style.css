@@ -343,7 +343,7 @@ section {
 
 .img-box img {
     /* width: 100%; */
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
 
 }
@@ -355,10 +355,10 @@ section {
 
 .liquid-shape {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 40%;
     z-index: -1;
-    top: 10%;
+    top: 1%;
 
 }
 
@@ -1073,6 +1073,13 @@ footer a i{
 }
 
 @media(max-width:420px){
+    .change-text h3 .word{
+        font-size: medium;
+    }
+    .img-box {
+        width: 300px;
+    }
+    
     html{
         font-size: 80%;
 
