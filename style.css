@@ -59,7 +59,6 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 20px 10%;
-    border: 1px solid red;
 }
 header.sticky{
     background: var(--bg-color);
@@ -596,24 +595,24 @@ section {
 
 }
 
-.skill-bar .bar .html {
+.skill-bar .bar .powerbi {
     width: 72%;
-    animation: html 2s;
+    animation: powerbi 2s;
 }
 
-.skill-bar .bar .figma {
+.skill-bar .bar .msexcel {
     width: 90%;
-    animation: figma 3s;
+    animation: msexcel 3s;
 }
 
-.skill-bar .bar .javascript {
+.skill-bar .bar .mspowerpoint {
     width: 80%;
-    animation: javascript 4s;
+    animation: mspowerpoint 4s;
 }
 
-.skill-bar .bar .css {
+.skill-bar .bar .businessanalysts {
     width: 62%;
-    animation: css 5s;
+    animation: businessanalysts 5s;
 }
 
 /* skill right------------------ */
@@ -905,7 +904,7 @@ footer a i{
 }
 
 /* skills left section keyframes-------------------------------------- */
-@keyframes html {
+@keyframes powerbi {
     0% {
         width: 0%;
     }
@@ -915,7 +914,7 @@ footer a i{
     }
 }
 
-@keyframes figma {
+@keyframes msexcel {
     0% {
         width: 0%;
     }
@@ -925,7 +924,7 @@ footer a i{
     }
 }
 
-@keyframes javascript {
+@keyframes mspowerpoint {
     0% {
         width: 0%;
     }
@@ -935,7 +934,7 @@ footer a i{
     }
 }
 
-@keyframes css {
+@keyframes businessanalysts {
     0% {
         width: 0%;
     }
@@ -1091,6 +1090,7 @@ footer a i{
     }
     footer p{
         font-size: .8rem;
+        margin-right: 5rem;
     }
     .filter-button .btn{
         font-size: 0.8rem;
