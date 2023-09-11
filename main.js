@@ -108,6 +108,62 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
+// form section
+let form = document.querySelector("form");
+form.addEventListener('submit', (e) =>{
+    e.preventDefault();
+    document.querySelector("#sub").value = "Submitting...";
+    let data = new FormData(form);
+    fetch("https://script.google.com/macros/s/AKfycbzNBJO5Oa3ecuVaU7n3EcAQmHxvuF1FgiS_DPIaf_qKi20LswSrI8WWOTbIabTPW5Di/exec",{
+        method: "POST",
+        body: data
+    })
+    .then(res => res.text())
+    .then(data => {
+        document.querySelector("#sub").value="submit"
+        document.querySelector("#msg").innerHTML=data;
+        setTimeout(() => {
+            const msg = document.getElementById('msg');
+          
+            
+            msg.style.display = 'none';
+          }, 1000);
+          
+
+        form.reset();
+    });
+})
+
+
+
+
+// hire now 
+var hirenow = document.getElementById('hireNow');
+hirenow.addEventListener('click', openUserEmail);
+
+
+function openUserEmail() {
+    var emailAddress = 'dhaneshsingh2024@gmail.com'; // Replace with the email address where you want to direct the user
+    
+    // Open the user's email client with a pre-filled email
+    var subject = "Hire Now Inquiry";
+    var body = "Hi, I'm interested in discussing job opportunities. Please contact me at your earliest convenience.";
+
+    // Create a mailto link
+    var mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    // Open the user's email client
+    // return HtmlService.createHtmlOutput('window.location.href = "' + mailtoLink + '";');
+    window.open(mailtoLink);
+  }
+
+
+
+
+
+
+
+
+
 const scrollScale = document.querySelectorAll(".scroll-scale");
 scrollScale.forEach((el) => observer.observe(el));
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_hidden.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -18,7 +18,7 @@
         <ul class="navlist">
             <li><a href="#home" style="--i:1;">Home</a></li>
             <li><a href="#about" style="--i:2;">About</a></li>
-            <li><a href="#services" style="--i:3;">Services</a></li>
+            <!-- <li><a href="#services" style="--i:3;">Services</a></li> -->
             <li><a href="#skills" style="--i:4;">Skills</a></li>
             <li><a href="#contact" style="--i:6;">Contact</a></li>
             <li><a href="https://mrdhanesh.aisoot.com" target="_blank" style="--i:5;">Blog</a></li>
@@ -51,14 +51,15 @@
                 </div>
                 <!-- <div class="behance-info">
                     <h5>Behance :</h5>
-                    <span>behance.net/kushagraAI</span>
+                    <span>behance.net/dhaneshAI</span>
 
                 </div> -->
 
             </div>
             <div class="btn-box">
                 <a href="" class="btn ">Download CV</a>
-                <a href="" class="btn ">Hire Me Now </a>
+                <a id="hireNow" href="" class="btn ">Hire Me Now </a>
+
             </div>
             <div class="social-icons">
                 <a href="https://www.facebook.com/dhaneshai/" target="_blank" style="--i:6"><i
@@ -174,14 +175,14 @@
                 benefits to healthcare professionals, including doctors, pharmacists, and hospitals. I have a proven
                 track record of successfully promoting and selling various pharmaceutical products, increasing sales and
                 revenue for the companies I've worked with.</p>
-            <div class="btn-box">
+            <!-- <div class="btn-box">
                 <a href="#" class="btn">Read More!</a>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- service section html ------------------------------------------- -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
         <div class="main-text scroll-scale">
             <span>what i will do for you</span>
             <h2>Our Services</h2>
@@ -224,7 +225,7 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
     <!-- skills section ------------------------------------------- -->
     <section id="skills" class="skills">
@@ -399,17 +400,18 @@
             <span>Ask Me Question</span>
             <h2>Contact Me</h2>
         </div>
-        <form action="#" class="scroll-bottom">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
-            <input type="text" placeholder="Your Address">
-            <input type="number" placeholder="Phone Number">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <h1 id="msg"></h1>
+        <form id="myForm" >
+            <input type="text" placeholder="Your Name" name="name">
+            <input type="text" placeholder="Your Email" name="email">
+            <input type="text" placeholder="Your Address" name="address">
+            <input type="number" placeholder="Phone Number" name="phonenumber">
+            <textarea  cols="30" rows="10" placeholder="Your Message" name="message"></textarea>
             <div class="btn-box formbtn">
-                <button type="submit" class="btn">Send Message</button>
+                <button id="sub" type="submit" class="btn" >Send Message</button>
             </div>
+            
         </form>
-
     </section>
     <!-- footer section------------------------------------------- -->
     <footer>
